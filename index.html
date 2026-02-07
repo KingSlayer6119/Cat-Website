@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitten Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="fur-tabs">
+        <ul>
+            <li class="active">Home</li>
+            <li>Gallery</li>
+            <li>Adoption</li>
+            <li>Treats</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Kitten Kingdom</h1>
+        
+        <div class="search-container">
+            <input type="text" id="catSearch" placeholder="Search for kittens... (or a secret?)">
+        </div>
+
+        <button id="meowBtn" class="cat-btn">Press for a Meow! 🐾</button>
+
+        <div id="videoEasterEgg" class="hidden">
+            <h3>You found the secret! 🐱</h3>
+            <iframe id="catVideo" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <button onclick="closeVideo()">Close</button>
+        </div>
+    </div>
+
+    <div id="bouncyKitten" class="kitten-sprite">
+        <img src="cat.png" alt="Bouncy Kitten">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
